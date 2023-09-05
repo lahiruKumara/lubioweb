@@ -36,11 +36,11 @@ try:
 except:
 	pass
 
-model = tf.keras.models.load_model('models\\Xception.h5')
-vit_model = torch.load('models\SMVIT.pt',map_location=torch.device('cpu'))
+model = tf.keras.models.load_model('models//Xception.h5')
+vit_model = torch.load('models/SMVIT.pt',map_location=torch.device('cpu'))
 app = Flask(__name__)
 
-app.config['UPLOAD_FOLDER'] = 'static\\uploaded'
+app.config['UPLOAD_FOLDER'] = 'static//uploaded'
 
 @app.route('/',methods = ['GET'])
 def home():
@@ -297,7 +297,7 @@ def heatmap(path,model_type,name):
 
 		# cv2.imwrite('static\Grad_cam++.jpg', cam_image)
 		# name=path.split('.')[0].split('/')[-1]
-		cv2.imwrite(f'static\\uploaded\\'+name+"_"+method+'.jpg', cam_image)		
+		cv2.imwrite(f'static//uploaded//'+name+"_"+method+'.jpg', cam_image)		
 
 
 		# Grad cam 
@@ -330,7 +330,7 @@ def heatmap(path,model_type,name):
 
 		# cv2.imwrite('static\Grad_cam.jpg', cam_image)
 		# name=path.split('.')[0].split('/')[-1]
-		cv2.imwrite(f'static\\uploaded\\'+name+"_"+method+'.jpg', cam_image)		
+		cv2.imwrite(f'static//uploaded//'+name+"_"+method+'.jpg', cam_image)		
 		# cv2.imwrite('B_gb.jpg', gb)
 		# cv2.imwrite('C_cam_gb.jpg', cam_gb)
 
@@ -388,7 +388,7 @@ def heatmap(path,model_type,name):
 		cam_image = show_cam_on_image(rgb_img, grayscale_cam)
 
 		# name=url.split('.')[0].split('/')[-1]
-		cv2.imwrite(f'static\\uploaded\\'+name+"_"+method+'.jpg', cam_image)		
+		cv2.imwrite(f'static//uploaded//'+name+"_"+method+'.jpg', cam_image)		
 
 
 
@@ -424,7 +424,7 @@ def heatmap(path,model_type,name):
 		cam_image = show_cam_on_image(rgb_img, grayscale_cam)
 
 		# name=url.split('.')[0].split('/')[-1]
-		cv2.imwrite(f'static\\uploaded\\'+name+"_"+method+'.jpg', cam_image)		
+		cv2.imwrite(f'static//uploaded//'+name+"_"+method+'.jpg', cam_image)		
 		# cv2.imwrite('static\\'+name+'_Grad_cam++.jpg', cam_image)
 
 	return
