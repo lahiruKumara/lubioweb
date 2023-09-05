@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>LUBioVision</title>
+
+    <style>
+        .border-bottom-color2 {
+            border-bottom: 7px solid#12691f;
+        }
+
+        .border-top-color2 {
+            border-top: 2px solid #12691f;
+            ;
+        }
+        
+        .container .gif img {
+        display: block;
+        width: 160%; 
+        height: auto;    
+
+        }
+
+        @media (max-width: 600px) {
+        .container .gif img {
+            display: none;
+       
+
+        }
+        }
+
+        .container .gif0 img {
+        display: none;      
+
+        }
+
+        @media (max-width: 600px) {
+        .container .gif0 img {
+            display: block;
+            width: 100%; 
+            height: auto;
+            margin-left: -40px
+
+        }
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+            <img class="logo" src="\static\logo.jpeg" style="margin-left: 110px;  width: 180px; height: 70px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                style=" margin-left: 10px; border-radius: 0px; border-color: #ffffff;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="margin-left: 48%;" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="color: #02c33c;" href="/"><strong>Home</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/generate">Generate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/usermanual">User Manual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mt-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <div class="text-left">
+                            <p class="text-lg fs-1" style="color: #12691f;">
+                                <strong>Melanoma Skin Cancer</strong><br>
+                                Identification with Explainability
+                            </p>
+                        </div>
+
+                        <div class="gif0">
+                            <img class="logo" src="\static\automated-melanoma-detection.gif">
+                        </div>
+                        <div class="text-left">
+                            <p style="font-size:18px"><p style="font-size:20px"><strong>Looking for a quicker, more accurate method to identify Melanoma skin
+                                    cancer ?</strong> </p>No further than LU Bio Vision,
+                                the framework used to inspecting your skin and produce explainability heatmaps that has
+                                been approved by dermatologists and oncologists.
+                                You can examine your skin with LU Bio Vision and receive the answers you need seconds.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="text-left">
+                            <form action="http://127.0.0.1:5000/generate" method="POST" enctype="multipart/form-data">
+                                <button type="submit" class="btn btn-outline-success"
+                                    style="width: 160px; height: 50px;">Get Started</button>
+                            </form>
+                        </br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="background-color: rgb(255, 255, 255);">
+                    <div class="gif">
+                        <img class="logo" src="\static\automated-melanoma-detection.gif">
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p style="text-align: justify;">
+                    Skin cancer is one of the most common cancers in the world and melanoma causes the highest number of
+                    deaths annually.
+                    Melanoma is the most hazardous type of skin cancer, that develops fast and spreads to other organs.
+                    World Health Organization (WHO)
+                    has predicted nearly  <strong> 7,650 melanoma deaths in 2023, with an anticipated 99,780 new cases </strong>  in the USA
+                    . In order to avoid adverse results from the advent,
+                    prompt detection and treatment are required. It is primarily recognized and distinguished by
+                    expensive and difficult malignant skin development.
+                    Several deep learning (DL) based, computer aided applications have been used to assist medical
+                    diagnosis process at a low cost.
+                    </br> </br>
+                    Although several studies have proposed machine learning models to classify melanoma, most of them
+                    lack the generalizability of their solution to
+                    be employed in a practical situation . Additionally, automated melanoma detection using digitized
+                    dermo copy pictures provides a significant
+                    potential use for DL techniques. Deep neural networks (DNNs), which can handle complicated problems,
+                    are becoming common in medical applications.
+                    However, the black-box nature of the decision-making process of the algorithm challenges the
+                    trustworthiness of the model. This can be addressed by explainable
+                    artificial intelligence (XAI), which is an evolving area of research.
+                   
+                </p>
+                </br>
+                <div class="row">
+                    <h2>Deep Learning Technology behind the system</h2>
+                    <div class="col-md-6">
+                        <img class="logo" src="static\methdology.png" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="col-md-6">
+                        <p style="text-align: justify;">
+                            In this research we proposed two main approaches and compared which approach is suitable for
+                            mask-guided classification.
+                            The high-level architecture of the overall research methodology. We used HAM10000 dataset as
+                            our training and validation dataset.
+                            For CNN based approach, there are five main sections such as Segmentation, Preprocessing,
+                            CNN based classification model, CAM based explainability methods,
+                            and Result evaluation.
+                            </br> </br>
+                            In ViT based approach, there are four sub sections such as Preprocessing, ViT base
+                            classification model, CAM based explainability methods,
+                            and Result evaluion. In ViT based approach, segmentation part is done by Mask Guided ViT
+                            model. To evaluate the explainability we used another dataset,
+                            which is ISIC 2018 task 2 dataset, because it has attribute masks to evaluate the GradCAM
+                            and GradCAM++ heat maps. (The more general version of Grad-CAM technique, which is known as
+                            the Grad-CAM++.
+                            )
+                        </br> </br>
+                        So, this application presents a computational model for melanoma identification by using a deep learning
+                        model with transfer learning together with XAI.The proposed approach can assist
+                        dermatologists as a support model for identifying melanoma.
+                        </p>
+                    </div>
+                </div>
+                </br> </br>
+                <div class="row">
+                    <h2>Skin Cancer MNIST: HAM10000 Dataset</h2>
+                    <div class="col-md-6">
+                        <p style="text-align: justify;">
+                            In this study we used one of the most widely used public datasets for melanoma
+                            identification, the HAM10000 dataset (10.5 GB), which contains over 10,000 images of skin
+                            lesions, including nevi and malignant melanoma. Each image is accompanied by clinical
+                            metadata, including diagnosis, age, and sex.
+                            </br> </br> This dataset contains 7 categories of skin lesions. Nevus lesions [Nevi] (6705),
+                            Dermatofibroma (115), Malignant skin tumours[Melanoma] (1113), Benign keratosis (1099),
+                            Basal cell carcinoma (514), Actinic keratosis (327), and Vascular lesions (142) are those
+                            categories.
+                        </p>
+                        <a href="https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000">Skin Cancer
+                            HAM-10000</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="logo" src="static\dataset.jpg" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="row">
+                    <h2>Result & Evaluation of models</h2>
+                    <div class="col-sm">
+                        <h5>[A] Classification Approach Results</h5>
+                        <p style="text-align: justify; font-size: 14px;">
+                            The confusion Metrix of each CNN models ((a) Xception model, (b) ResNet50 model (c) VGG16
+                            model ) with the dataset of segmentation image of HAM 10000.According to the theses Metrix
+                            all CNN model has approximately similar accuracy but highest accuruy was 98.37% for Xception
+                            model.
+                            <img class="logo" src="static\curves.png" style="width: 100%; height: auto;">
+                        </p>
+                        <p style="font-size: 14px; text-align: justify;">
+                            These are the summary table of our experimented CNN based model.Here, Vanila models means
+                            without any changes of cnn base architecture. In there we got highest accuracy on Modified
+                            Xception model.
+                        <div style="text-align: center;">
+                            <img class="logo" src="static\cnn_r.jpg" style="width: 100%; height: auto;">
+                        </div>
+                        </p>
+                        <p style="text-align: justify; font-size: 14px;">
+                            The following table show the results of vit based model. In there we got highest 91.7%
+                            accuracy on SM-Vit than base Vit.
+                        </p>
+                        <div style="text-align: center;">
+                            <img class="logo" src="static\vit_r.png" style="width: 100%; height: auto;">
+                        </div>
+                        <p style="text-align: justify; font-size: 14px;">
+                            Therefore, We have used this SM-VIT model for this web application development.
+                        </p>
+                    </div>
+                    <div class="col-sm">
+                        <h5>[B] Explainability Heat Maps Results</h5>
+                        <p style="text-align: justify; font-size: 14px;">
+                            We used Interset over union fo the quatity evaluaytion of heat map and Those results are
+                            show in the Slide.
+                            Best IOU(Intersect Over Union) values got for the Resnet 50 model.
+                            </br>
+                        <div style="text-align: center;">
+                            <img class="logo" src="static\iou_cnn.png" style="width: 100%; height: auto;">
+                        </div>
+                        </p>
+                        <p style="text-align: justify; font-size: 14px;">
+                            we can see that GradCAM++ is more explainable than Grad-CAM because it has better coverage
+                            for the regions given by the attribute masks and higher IUO values.
+                        </p>
+                        <div style="text-align: center; font-size: 14px;">
+                            <img class="logo" src="static\iou.png" style="width: 100%; height: auto;"><br>
+                        </div>
+                        <p style="text-align: justify; font-size: 14px;">
+                            Here, Area(bounding box) refers to the area of the bounding box for a particular class and a
+                            given image, Area(internal pixels) refers to the number of non-zero pixels in the
+                            explanation map that lie inside the bounding box and Area(external pixels) refers to the
+                            number of non-zero pixels that lie outside the bounding box.
+                        </p>
+                        <div style="text-align: center;">
+                            <img class="logo" src="static\iou_vit.jpg" style="width: 100%; height: auto;">
+                        </div>
+                        <p style="text-align: justify; font-size: 14px;">
+                            IOU values of the Vit model are shown in the above table, and according to that SM-VIT has
+                            the best explainability among the models.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </br></br>
+    <footer id="main-footer" class="border-top-color2">
+        <div style="text-align: center;">
+            </br>
+            <p style="font-size: xx-small;">Copyright &copy; 2023 - LU bio Vision - All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+
+</html>
