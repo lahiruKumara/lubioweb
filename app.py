@@ -457,6 +457,6 @@ if __name__ == '__main__':
 	from dotenv import load_dotenv
 	dotenv_path = '.env' # Path to .env file
 	load_dotenv(dotenv_path)
-	app.run(debug=True)
+	app.run(host='0.0.0.0', port=5000)
 	app.run(use_reloader=True)
 
